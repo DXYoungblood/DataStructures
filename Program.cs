@@ -2,12 +2,23 @@
 
 namespace ConsoleApp1
 {
-    class node
+    
+       class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            
+        }
+    }
+    
+    
+    class node <T>
     {
         int value;
-        public node next;
+        public node <T> next;
 
-        public node(int Value)
+        public node <T> (int Value)
         {
             value = Value;
             next = null;
@@ -19,18 +30,11 @@ namespace ConsoleApp1
         }
     }
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            
-        }
-    }
+ 
 
     class linkedlist<T>
     {
-        node head;
+        node<T> head;
 
         public linkedlist()
         {
