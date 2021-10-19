@@ -48,7 +48,7 @@ namespace ConsoleApp1
 
         public void addFirst(int x)
         {
-            node finger = new node(x);
+            node <T> finger = new node <T> (x);
 
             if (isEmpty())
             {
